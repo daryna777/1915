@@ -4,7 +4,7 @@ class Human:
 class Auto:
     def __init__(self , brand):
         self.brand = brand
-        self.passenger = []
+        self.passengers = []
     def add_passenger(self, human):
         self.passengers.append(human)
     def print_passengers_names(self):
@@ -18,9 +18,9 @@ Max = Human("Maxim")
 Sviatoslav = Human ("Sviatoslav")
 Maxim = Human ("Maxim")
 car = Auto("Mercedes")
-car.add_passengers(Max)
-car.add_passengers(Sviatoslav)
-car.add_passengers(Maxim)
+car.add_passenger(Max)
+car.add_passenger(Sviatoslav)
+car.add_passenger(Maxim)
 car.print_passengers_names()
 car1 = Auto("Tesla")
 car1.print_passengers_names()
